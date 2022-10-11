@@ -1,4 +1,4 @@
-# Linux-intro-cli
+# Linux-intro-cli-task
 
 
 -	Use Command ` whoami ` and figure out the output.

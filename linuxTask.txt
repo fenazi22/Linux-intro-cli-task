@@ -1,0 +1,53 @@
+Command: whoami
+Output:  root
+------------------------------------------
+Command:hostname                 
+Output:kali
+---------------------------------------------
+Command: wc holehe-master
+Output: wc: holehe-master: Is a directory
+      0       0       0 holehe-master
+---------------------------------------------
+Command:last  
+Output:{
+kali     tty7         :0               Tue Oct 11 16:01   still logged in
+reboot   system boot  5.18.0-kali5-amd Tue Oct 11 16:01   still running
+kali     tty7         :0               Tue Oct 11 15:49 - 16:00  (00:11)
+reboot   system boot  5.18.0-kali5-amd Tue Oct 11 15:49 - 16:00  (00:11)
+wtmp begins Tue Oct 11 15:49:00 2022
+}
+---------------------------------------------------
+Command:w               
+Output:
+ 17:43:33 up  1:42,  2 users,  load average: 0.32, 0.45, 0.72
+USER     TTY      FROM             LOGIN@   IDLE   JCPU   PCPU WHAT
+kali     tty7     :0               16:01    1:42m 23:20   1.43s xfce4-session
+kali     pts/0    -                16:21    5.00s 10.61s  0.53s sudo -s
+---------------------------------------------------
+Command:history | grep -i whoami              
+Output:  125  whoami
+---------------------------------------------------
+Command: uptime
+Output:  17:45:03 up  1:43,  2 users,  load average: 0.16, 0.36, 0.66
+---------------------------------------------------
+Command: TZ="ASIA/DUBIA" date
+Output:Tue Oct 11 09:46:04 PM ASIA 2022
+------------------------------------------------
+Command: cal >Date
+Output:
+    October 2022      
+Su Mo Tu We Th Fr Sa  
+                   1  
+ 2  3  4  5  6  7  8  
+ 9 10 11 12 13 14 15  
+16 17 18 19 20 21 22  
+23 24 25 26 27 28 29  
+30 31                 
+
+-----------------------------------------
+Command:echos "Oh there is an error" 2> logs.txt
+Command: cat logs.txt  
+Output:'echos' not found, did you mean:
+  command 'echo' from deb coreutils
+Try: apt install <deb name>
+
